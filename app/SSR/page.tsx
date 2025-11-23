@@ -9,10 +9,14 @@ export default async function SSRExample() {
       cache: "no-store",
       /* or:
       next: {
-        revalidate: 60,
+        revalidate: 0,
       }, */
     },
   ).then((res) => res.json());
+
+  /* or:
+  export const dynamic = 'force-dynamic';
+  */
 
   return (
     <main className="p-4 space-y-6">
