@@ -4,7 +4,7 @@ export async function generateStaticParams() {
   const posts: Post[] = await fetch(
     "https://jsonplaceholder.typicode.com/posts?_limit=5",
   ).then((res) => res.json());
-  /* Will SSG first 5 posts, the other ones will SSR then cached.
+  /* Will SSG first 5 posts, the others will SSR then be cached.
   Unless dynamicParams is set to false (default is true) */
 
   return posts.map((post) => ({

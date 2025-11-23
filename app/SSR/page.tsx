@@ -22,8 +22,8 @@ export default async function SSRExample() {
     <main className="p-4 space-y-6">
       <h1 className="text-2xl font-bold">Server-Side Rendering</h1>
       <p>
-        fetch with cache: &apos;no-store&apos; or next revalidate - Server time:{" "}
-        {time}
+        fetch with cache: &apos;no-store&apos; or next.revalidate: 0 - Server
+        time: {time}
       </p>
 
       <ul>
