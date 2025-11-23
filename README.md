@@ -1,9 +1,9 @@
 # Next.js 16 Web Rendering Patterns
 
-- **Client-Side Rendering:** fully rendered on the user's browser through JavaScript.
-- **Static Site Generation:** works by default, fetch and return static files populated at build time.
-- **Server-Side Rendering:** when disabling cache or using next revalidate on fetch options.
-- **Incremental Static Regeneration:** when exporting const revalidate with how many seconds it takes.
+- **Client-Side Rendering:** fully renders JS bundle on the user's browser, needs `'use client'` on top. Otherwise is a server component by default.
+- **Static Site Generation:** the default, fetch and return static files populated at build time.
+- **Server-Side Rendering:** must disable cache on fetch options or force dynamic. Renders at request time.
+- **Incremental Static Regeneration:** when exporting `const revalidate` or using `next.revalidate` on fetch options.
 
 ### Demo: https://thiagoow-web-rendering-patterns.vercel.app
 
